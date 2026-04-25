@@ -1,0 +1,22 @@
+@use "../abstracts/variables" as *;
+
+.alert {
+    padding: .75rem 1rem;
+    border-radius: $radius-sm;
+    margin-bottom: .5rem;
+}
+
+.alert--success {
+    background: $success-bg;
+}
+
+.alert--info {
+    background: $info-bg;
+}
+
+// Added for Task 2
+.alert--danger {
+    background: $danger-bg;
+    color: #991b1b; 
+    border: 1px solid #fecaca;
+}

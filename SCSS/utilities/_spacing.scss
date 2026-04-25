@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as *;
+
+.mb-lg { margin-bottom: 2rem; }
+.mt-lg { margin-top: 2rem; }
+
+.rounded-md {
+    border-radius: $radius-md;
+}
