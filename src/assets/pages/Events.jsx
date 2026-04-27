@@ -22,14 +22,14 @@ export default function Events() {
       await new Promise((resolve) => setTimeout(resolve, 800))
 
       const englishEvents = [
-        { id: 1, title: 'Annual Science Fair', body: 'Join us for the annual science fair featuring projects from students across all departments.', category: 'Academic', active: true },
-        { id: 2, title: 'Basketball Championship', body: 'Cheer for our college team as they compete in the inter-college basketball championship.', category: 'Sports', active: true },
-        { id: 3, title: 'Spring Cultural Fest', body: 'Celebrate diversity with music, dance, and food from around the world at our spring fest.', category: 'Cultural', active: true },
-        { id: 4, title: 'Tech Innovation Hackathon', body: 'A 48-hour hackathon for developers, designers, and tech enthusiasts to build innovative solutions.', category: 'Technology', active: true },
-        { id: 5, title: 'Guest Lecture: Future of AI', body: 'Learn about the future of artificial intelligence in the modern world from industry experts.', category: 'Academic', active: true },
-        { id: 6, title: 'Campus Soccer Tryouts', body: 'Open tryouts for the campus soccer teams. All skill levels are welcome to participate.', category: 'Sports', active: true },
-        { id: 7, title: 'Art Exhibition: Student Works', body: 'Explore the creative talents of our fine arts students in this week-long exhibition.', category: 'Cultural', active: true },
-        { id: 8, title: 'Cybersecurity Workshop', body: 'Hands-on workshop covering the basics of network security and ethical hacking practices.', category: 'Technology', active: true },
+        { id: 1, title: 'Literature Review Symposium', body: 'Join literature scholars and students as they present analytical reviews of modern contemporary poetry and fiction.', category: 'Academic', active: true },
+        { id: 2, title: 'Inter-departmental Relay Race', body: 'A thrilling track and field event where different academic departments compete for the ultimate campus trophy.', category: 'Sports', active: true },
+        { id: 3, title: 'International Food Festival', body: 'Taste authentic cuisines from over 20 different countries prepared by our incredibly diverse student body.', category: 'Cultural', active: true },
+        { id: 4, title: 'Robotics & AI Showcase', body: 'Witness the incredible robots built by the engineering club, featuring autonomous navigation and machine learning.', category: 'Technology', active: true },
+        { id: 5, title: 'Startup Pitch Competition', body: 'Watch aspiring student entrepreneurs pitch their innovative business ideas to a panel of local industry judges.', category: 'Academic', active: true },
+        { id: 6, title: 'Midnight Volleyball Tournament', body: 'Experience the excitement of our annual midnight volleyball tournament under the bright stadium lights.', category: 'Sports', active: true },
+        { id: 7, title: 'Theater Play: The Crucible', body: 'The campus drama club presents a compelling and modern adaptation of Arthur Miller\'s classic play.', category: 'Cultural', active: true },
+        { id: 8, title: 'Game Development Jam', body: 'Collaborate with artists, musicians, and programmers to create a playable video game from scratch in just 72 hours.', category: 'Technology', active: true },
       ]
 
       // Preserve any custom events added via Dashboard (they use Date.now() for IDs)
@@ -72,7 +72,7 @@ export default function Events() {
   })
 
   return (
-    <div className="page events-page">
+    <div className="main-content page events-page">
       <div className="page-header">
         <h1>Campus Events</h1>
         {lastUpdated && (

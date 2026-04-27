@@ -33,19 +33,22 @@ function App() {
         onClick={() => setIsDarkMode(!isDarkMode)}
         style={{
           position: 'fixed',
-          bottom: '20px',
-          right: '20px',
+          bottom: 'clamp(15px, 4vw, 30px)',
+          right: 'clamp(15px, 4vw, 30px)',
           zIndex: 1000,
-          padding: '10px 15px',
-          borderRadius: '30px',
-          border: 'none',
-          backgroundColor: isDarkMode ? '#f1f1f1' : '#222',
-          color: isDarkMode ? '#222' : '#fff',
+          padding: 'clamp(8px, 2vw, 12px) clamp(16px, 4vw, 20px)',
+          borderRadius: '8px',
+          border: '1px solid rgba(150,150,150,0.2)',
+          backgroundColor: isDarkMode ? 'rgba(30,41,59,0.8)' : 'rgba(255,255,255,0.8)',
+          backdropFilter: 'blur(10px)',
+          color: isDarkMode ? '#f8fafc' : '#0f172a',
+          fontWeight: 'bold',
+          fontSize: 'clamp(14px, 3vw, 16px)',
           cursor: 'pointer',
-          boxShadow: '0 4px 10px rgba(0,0,0,0.3)'
+          boxShadow: '0 8px 32px rgba(0,0,0,0.1)'
         }}
       >
-        {isDarkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
+        {isDarkMode ? '☼ Light Mode' : '☾ Dark Mode'}
       </button>
       <BrowserRouter>
         <Suspense fallback={<div className="loading-screen">Loading...</div>}>
